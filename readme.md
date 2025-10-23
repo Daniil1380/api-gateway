@@ -1,6 +1,4 @@
 
-Конечно, вот пример README-файла для вашего проекта, включающий объяснение в формате ADR (Architecture Decision Record) о необходимости использования API Gateway.
-
 ---
 
 # API Gateway Service
