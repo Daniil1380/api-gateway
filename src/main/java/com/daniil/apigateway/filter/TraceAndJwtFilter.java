@@ -23,7 +23,6 @@ public class TraceAndJwtFilter implements GlobalFilter, Ordered {
         log.info("[{}] Incoming request: {} {}", traceId,
                 exchange.getRequest().getMethod(), exchange.getRequest().getURI());
 
-        // JWT просто прокидывается дальше — Resource Server проверит его внутри сервисов
         String authHeader = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
         if (authHeader != null) {
             exchange.mutate()
